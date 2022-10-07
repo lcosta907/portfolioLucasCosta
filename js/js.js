@@ -158,6 +158,6 @@ sr.reveal('.conhecimentosSeis', {
 
 const ano = new Date();
 let data = document.getElementById('data');
-data.innerHTML = `© ${ano.getFullYear()} Lucas Cota.`;
+data.innerHTML = `© ${ano.getFullYear()} Lucas Costa.`;
 
 
