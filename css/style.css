@@ -73,24 +73,6 @@ html{
      margin-top: 40px;
  }
 
- .quemSou-left h3{
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end); 
-}
-
-.quemSou-left h1 {
-  color: coral;
-}
-.quemSou-left h3:nth-child(2){
-  animation: type2 8s steps(60, end);
-}
-
-.quemSou-left h3{
-  text-decoration: none;
-}
-
 span{
   animation: blink 1s infinite;
   color: coral;
@@ -116,20 +98,51 @@ span{
  
  .quemSou{
    width: 100%;
-   height: 700px;
+   height: fit-content;
+   display: flex;
+   justify-content: center;
    background: linear-gradient(90deg, #023d8ab9 10%,#0095c7bd 50%, #023d8a4f 100%);
  }
- 
+
+.contentQuemSou {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.esquerda {
+  width: 60%;
+  padding: 15px;
+}
+
+.esquerda img {
+  width: 100%;
+}
+.direita {
+  width: 40%;
+  padding: 10px;
+  padding-top: 15%;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.direita h1 {
+  font-size: 400%;
+  margin-left: -200px;
+  color: white; text-shadow: black 0.1em 0.1em 0.2em
+}
+
  .quemSou-center{
    width: 100%;
  }
  
  .quemSou-left{
    color: aliceblue;
-   width: 50%;
+   width: 100%;
    padding: 20px;
    font-size: 22px;
    margin-top: 170px;
+   background-color: black;
  }
  
  .quemSou-left h3{
@@ -342,7 +355,7 @@ span{
  }
  
  .footer{
-  background: linear-gradient(90deg, #023d8ab9 10%,#0095c7bd 50%, #023d8a4f 100%);
+  background: linear-gradient(90deg, #023d8ab9 10%,#023047 50%, #023d8a4f 100%);
    height: 100px;
  }
  
@@ -390,22 +403,21 @@ span{
   }
 }
 @media screen and (max-width: 600px){
-  .center{
-    display: flex;
-    flex-direction: column;
+  .contentQuemSou {
+    display: block;
   }
-  .quemSou-left{
+  .esquerda {
     width: 100%;
+  }
+  .direita {
+    width: 100%;
+    padding: 10px;
+  }
+  .direita h1{
+    font-size: 300%;
     text-align: center;
-    word-break: break-all;
-  }
-  .quemSou-right{
-    align-content: center;
-    word-break: break-all;
-    width: 100%;
-  }
-  .quemSou{
-    height: fit-content;
+    margin: 0;
+    color: white; text-shadow: black 0.1em 0.1em 0.2em
   }
 
   
