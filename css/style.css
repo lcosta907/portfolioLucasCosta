@@ -104,6 +104,34 @@ span{
    background: linear-gradient(90deg, #023d8ab9 10%,#0095c7bd 50%, #023d8a4f 100%);
  }
 
+.btnDireita {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  color: coral; text-shadow: black 0.1em 0.1em 0.2em;
+  cursor: pointer;
+  
+}
+.btnDireita h2 {
+  border-style: dotted;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btnDireita h2 a {
+  text-decoration: none;
+  color: coral
+}
+.btnDireita h2:hover{
+  color: white;
+}
+
+.btnDireita h2 a:hover{
+  color: white;
+}
+
 .contentQuemSou {
   width: 100%;
   height: 100%;
